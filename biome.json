@@ -1,0 +1,80 @@
+{
+    "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+    "assist": {
+        "actions": {
+            "source": {
+                "organizeImports": "on"
+            }
+        }
+    },
+    "linter": {
+        "rules": {
+            "complexity": {
+                "noUselessStringConcat": "error",
+                "noUselessUndefinedInitialization": "error",
+                "useDateNow": "error",
+                "useSimplifiedLogicExpression": "off"
+            },
+            "correctness": {
+                "noUnreachable": "off",
+                "noUnusedImports": "error",
+                "noConstantMathMinMaxClamp": "error",
+                "noUnusedFunctionParameters": "error",
+                "noUnusedVariables": {
+                    "level": "warn",
+                    "fix": "unsafe"
+                }
+            },
+            "nursery": {
+                "noFloatingPromises": "error"
+            },
+            "performance": {
+                "noDelete": "off"
+            },
+            "style": {
+                "useImportType": "error",
+                "noNonNullAssertion": "off",
+                "noParameterAssign": "off"
+            },
+            "suspicious": {
+                "noExplicitAny": "off",
+                "noTsIgnore": "error"
+            }
+        }
+    },
+    "javascript": {
+        "formatter": {
+            "enabled": true,
+            "indentStyle": "space",
+            "indentWidth": 4,
+            "quoteStyle": "single",
+            "semicolons": "always",
+            "trailingCommas": "all",
+            "lineWidth": 200,
+            "arrowParentheses": "asNeeded",
+            "bracketSameLine": true
+        }
+    },
+    "json": {
+        "formatter": {
+            "enabled": true,
+            "indentWidth": 4,
+            "indentStyle": "space",
+            "lineWidth": 320
+        }
+    },
+    "html": {
+        "parser": {
+            "interpolation": true
+        }
+    },
+    "files": {
+        "ignoreUnknown": true,
+        "includes": ["**", "!assets/*", "!data/*", "!env/*", "!mock/*", "!.vscode/*", "!.zed/*"]
+    },
+    "vcs": {
+        "enabled": true,
+        "clientKind": "git",
+        "useIgnoreFile": true
+    }
+}
