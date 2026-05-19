@@ -7,3 +7,4 @@ Hey Maus,
 `pnpm dev` startet dir den Live server, dann kannst du einfach mit Cmd + Klick auf die http Adresse in der Konsole klicken.
 
 `pnpm lint:fix` lässt dir den linter drüber laufen. Er versucht schon so viel wie er kann selber zu fixen.
+# Medienprojekt
